@@ -1,0 +1,68 @@
+html{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    margin: 0;
+}
+h1{
+    font-size: 4em;
+    margin: 0;
+}
+.banner{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10%;
+    max-height: 800px;
+}
+
+.eva img{
+    height:  90vh;
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.titulo img{
+    align-self: flex-start;
+    width: 100%;
+}
+.titulo span{
+    font-size: 2em;
+    width: 60%;
+    align-self: flex-start;
+}
+
+.historia{
+    padding-top: 5%;
+    padding-left: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.historia img {
+    height: 50vh;
+}
+.divisorias img{
+    width: 100%;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+    align-content: space-around;
+}
+.textos p{
+    width: 27%;
+    font-size: 1.5em;
+    margin: 0;
+    text-align: start;
+}
+.paragrafos{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    justify-content: space-between;
+    align-items: flex-start;
+}
