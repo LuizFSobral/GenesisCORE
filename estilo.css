@@ -1,8 +1,9 @@
 html{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: archivo
 }
 body{
     margin: 0;
+    background-color: whitesmoke;
 }
 h1{
     font-size: 4em;
@@ -10,6 +11,33 @@ h1{
 }
 li{
     list-style: none;
+}
+.header{
+    width: 100%;
+    display: flex;
+    height: 150px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header img{
+    width: 200px;
+    position: absolute;
+    left: 8%;
+}
+.navbar{
+    background-color: black;
+    width: 90%;
+    height: 90px;
+    align-self: center;
+    margin-left: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 37px;
+    letter-spacing: 0.01em;
 }
 .banner{
     display:flex;
@@ -31,11 +59,6 @@ li{
 .titulo img{
     align-self: flex-start;
     width: 100%;
-}
-.titulo span{
-    font-size: 2em;
-    width: 60%;
-    align-self: flex-start;
 }
 
 .historia{
@@ -76,7 +99,7 @@ li{
     margin-top: 10%;
     width: 90%;
     gap: 16px;
-    font-size: 1.2em;
+    font-size: 1.3em;
 }
 .pilotos img{
    width:100%;
