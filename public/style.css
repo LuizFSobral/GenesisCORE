@@ -1,0 +1,458 @@
+:root{
+  --roxolindo: #9600FF;
+  --verdelindo: #00FF96;
+}
+html{scroll-behavior:smooth}
+body{
+  background-color: black;
+  color: white;
+  margin: 0;
+}
+a{
+  text-decoration:  none;
+  color: white;
+}
+.header{
+  display: flex;
+  justify-content: center;
+  padding-top: 2%;
+}
+.navbar{
+  width: 1160px;
+  height: 57px;
+  border-top: 2px white solid;
+  border-bottom: 2px white solid;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar a {
+font-family: 'Glacial Indifference';
+font-style: normal;
+font-weight: 400;
+font-size: 32px;
+line-height: 38px
+}
+.buttons {
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+width: 146px;
+height: 30px;
+font-family: 'Glacial Indifference';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 18px;
+}
+.buttons button{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 0px 10px;
+gap: 10px;
+background-color: white;
+color: black;
+border: none;
+border-radius: 5px;
+}
+.login{
+  width: 55px;
+  height: 30px;
+}
+.cadastro{
+width: 81px;
+height: 30px;
+}
+.banner{
+  padding-left: 200px;
+  margin-top: 58px;
+}
+.title{
+font-family: 'Maharlika';
+font-style: normal;
+font-weight: 400;
+font-size: 48px;
+line-height: 53px;
+width: 545px;
+height: 178px;
+align-self: center;
+}
+.linha{
+  height: 1px;
+  width:183px;
+  align-self:center;
+  margin-bottom: 13px;
+  background-color: white;
+}
+.nge{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.banner-text{
+width: 512px;
+height: 96px;
+}
+.banner-text p{
+font-family: 'Glacial Indifference';
+font-size: 20px;
+line-height: 24px;
+letter-spacing: -0.02em;
+}
+.container{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.saiba-mais span{
+font-size: 20px;
+line-height: 22px;
+margin-left: 21px;
+}
+.saiba-mais{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  width: 200px;
+  height: 56px;
+  padding-left: 350px;
+}
+.saiba-mais img{
+  position: absolute;
+  z-index: -1;
+}
+.historia{
+  margin-top: 150px;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.historia img{
+  position: absolute;
+  z-index: -1;
+  width: 100vw;
+}
+.fundo-historia{
+  background-color: black;
+  width: 743px;
+  height: 121px;
+margin-right: 16px;
+display: flex;
+justify-content: center;
+}
+.fundo-historia span{
+  font-size: 80px;
+  align-self: center;
+}
+.container-historia{
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.historia-text{
+  width: 90vw;
+  border-top: 3px var(--roxolindo) solid;
+  border-bottom: 3px var(--roxolindo) solid;
+  display: flex;
+  align-items: center;
+  height: 280px;
+}
+.textos{
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 56px;
+}
+.textos p{
+font-family: 'Glacial Indifference';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+letter-spacing: -0.06em;
+}
+.quadrado{
+  width: 300px;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+.line{
+  width: 300px;
+  height: 3px;
+  background-color: var(--roxolindo);
+}
+.quadrado img{
+  position: absolute;
+}
+
+.personagens{
+  height: 100vh;
+  margin-left: 8%;
+  margin-right: 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.rei{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imgrei{
+  border: 2px var(--verdelindo) solid;
+  position: absolute;
+}
+.green-line{
+  height: 97%;
+  width: 2px;
+  background-color: var(--verdelindo);
+}
+.linhas{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 174px;
+}
+.personagens p{
+  width: 30%;
+  font-size: 20px;
+  text-align: justify;
+  margin: 0;
+}
+.asuka{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imgasuka{
+border: 2px var(--verdelindo) solid;
+position: absolute
+}
+.grid {
+  width: 200px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  border: 2px #00FF96 solid;
+}
+.grid div{
+  height: 20px;
+  width: 20px;
+  
+}
+#qdr{ 
+  outline:0.1px solid #00ff951f;
+}
+.mini-grid{
+  width: 80px;
+  height: 80px;
+  display:flex;
+  flex-wrap: wrap;
+  background-color: black;
+  margin-left: 50px;
+}
+.mini-grid div{
+  height: 20px;
+  width: 20px;
+}
+.container-tetris{
+  display: flex;
+  width: 350px;
+  position: absolute;
+  opacity: 1;
+/*   border:2px red solid */
+}
+.container-tetris.hidden{
+  display: flex;
+  width: 350px;
+  position: absolute;
+  opacity: 0;
+}
+.tetris-display{
+/*   border: 2px blue solid; */
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+.tetris-wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+/*   border: 2px green solid; */
+}
+.placar{
+/*   border: 2px green solid; */
+  display: flex;
+  flex-direction: row-reverse;
+}
+.placar span{
+font-family: 'Radwave Demo';
+font-size: 80px;
+display: flex;
+align-items: center;
+letter-spacing: 0.045em;
+}
+.placar-titulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+.placar-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.placar-nomes{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  margin-top: 32px;
+  flex-direction: column;
+  gap: 32px;
+  justify-content:space-evenly;
+  align-items: center;
+  border-top: #9600FF 2px solid;
+  border-bottom: #9600FF 2px solid;
+  position:relative;
+
+}
+.borda-esq{
+  border-left: 2px solid #9600FF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 15%;
+}
+.borda-dir{
+  border-left: 2px solid #9600FF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 15%;
+}
+.baixo{
+  border-left: 2px solid #9600FF;
+  position: absolute;
+  top: 85%;
+  bottom: 0;
+}
+.nome span{
+  font-weight: 300;
+  font-size: 26px;
+}
+.nome{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mini-grid h3{
+  font-family: Radwave Demo;
+}
+
+.pop-up{
+  width: 400px;
+  height: 200px;
+  border: 2px var(--roxolindo) solid;
+  background-color: rgba(0, 0, 0, 0.717);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none;
+  opacity: 0;
+}
+.pop-up h3{
+  font-family: Radwave Demo;
+}
+.pop-up input{
+  background-color: transparent;
+  box-shadow: 0 0 0 0;
+  border-left: 2px solid #9600FF;
+  border-right: 2px solid #9600FF;
+  border-top: none;
+  border-bottom: 2px solid #9600FF;
+  outline: 0;
+  color: white;
+  font-family: glacial Indifference;
+  font-size: 20px;
+  text-align: center;
+}
+.pop-up.show{
+  opacity: 1;
+  pointer-events: auto;
+}
+.jogar{
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: #00FF96 1px solid;
+  border-radius: 2px;
+  color: #00FF96;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  font-family: glacial Indifference;
+  background: rgba(0, 255, 150, 0.13);
+}
+.registrar{
+  width: 100px;
+  height: 30px;
+  outline: none;
+  border: #9600FF 1px solid;
+  border-radius: 2px;
+  color: #9600FF;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  font-family: glacial Indifference;
+  background: rgba(150, 0, 255, 0.13);
+  margin-top: 3%;
+}
+
+.meus-personagens{
+  width:100vw;
+  height: auto;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Maharlika';
+  margin-top:10%;
+
+}
+.green-border{
+  height: inherit;
+  width: 5px;
+  background: #00FF96;
+}
+.clipes{
+  width: 100vw;
+  height: 400px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-top:2px #FF008F solid;
+  border-bottom: 2px #FF008F solid;
+  margin-top: 150px;
+}
+.videos{
+  width:40%;
+  border:2px #FF008F solid;
+}
