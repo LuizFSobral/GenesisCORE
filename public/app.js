@@ -14,11 +14,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const pop = document.querySelector('#pop')
     const startBtn = document.querySelector('#comecar')
     const cores = [
-        '#E93479',
-        '#05ffa1',
-        '#b967ff',
-        '#F9AC53',
-        '#153CB4'
+        '#00ADEE',
+        '#EC008B',
+        '#8AC53E',
+        '#FFF100',
+        '#F6972B', 
+        '#EC1B24',
+        '#FFC518'
     ]
 
 // aqui eu faço os desenhos das peças usando o indice pra indicar onde está preenchido
@@ -52,14 +54,26 @@ document.addEventListener('DOMContentLoaded', () => {
         [1,width+1,width*2+1,width*3+1],
         [width,width+1,width+2,width+3]
     ]
+    const peçaLInv = [
+      [0, 1, width + 1, width * 2 +1],
+      [width, width+1, width + 2, width *2],
+      [1, width +1 , width* 2 + 1, width * 2 + 2 ],
+      [width + 2, width * 2, width * 2 +1, width * 2 +2]
+    ]
+    const peçaZInv =[
+      [width, width+1,width *2 +1, width*2 +2],
+      [2, width +1, width +2, width * 2+1],
+      [width, width+1,width *2 +1, width*2 +2],
+      [2, width +1, width +2, width * 2+1]
+    ]
 
-    const peças = [peçaL, peçaZ,peçaT, peçaO,peçaI]
+    const peças = [peçaL, peçaZ,peçaT, peçaO,peçaI, peçaLInv, peçaZInv]
     
     let currentPosition = 4 // aqui diz onde a peça vai començar dentro do grid
     let currentRotation = 0 // aqui diz em qual rotação ela vai começar -- sempre a primeira
     
     let random = Math.floor(Math.random() * peças.length) // aqui eu digo qual peça será a proxima (randomico)
-    let current = peças[random][currentRotation]
+    let current = peças[random][currentRotation] // current é a peça selecionada aleatoriamente
     
     
     function desenhar(){
@@ -97,7 +111,8 @@ document.addEventListener('DOMContentLoaded', () => {
         FimdeJogo()
     }
     function freeze (){
-        if (current.some(index => squares[currentPosition + index+ width].classList.contains('taken'))){
+        if (current.some(index => squares[currentPosition + index + width].classList.contains('taken'))){
+          //se algum indice (div) encostar em uma div  com a classe taken, o código transforma todas as divs da peça em taken.
             current.forEach(index => squares[currentPosition + index].classList.add('taken'))
             random = nextRandom
             nextRandom = Math.floor(Math.random()* peças.length)
@@ -114,9 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
     function moveLeft(){
         apagar()
         const estaNaBordaEsquerda = current.some(index =>(currentPosition + index) % width === 0)
-        
+          /* os numeros da borda esquerda sempre são multiplos de 10, 0, 10, 20 ,30 isso pois o width do grid é 10
+          eu verifico se ele esta na borda esquerda checando se o resto da divisão da posição de uma peça pelo width é 0
+          se verdadeiro, significa que tem alguma peça na esquerda. */
         if (!estaNaBordaEsquerda) currentPosition -=1
-
+        // se ele não está na borda esquerda, eu deixo ele se mexer para a esquerda, como eu faço isso?
+        // sei la
+        // width é = 10, o primeiro quadrado é na posição 0 então pra mexer pra direita é +1, já pra direita é -1 :D
         if (current.some(index => squares[currentPosition + index].classList.contains('taken'))){
         current+= 1
         } 
@@ -180,7 +199,9 @@ document.addEventListener('DOMContentLoaded', () => {
         [0, displayWidth, displayWidth+1, displayWidth*2+1], 
         [1, displayWidth, displayWidth+1, displayWidth+2], 
         [0, 1, displayWidth, displayWidth+1], 
-        [1, displayWidth+1, displayWidth*2+1, displayWidth*3+1]
+        [1, displayWidth+1, displayWidth*2+1, displayWidth*3+1],
+        [0, 1, displayWidth + 1, displayWidth * 2 +1],
+        [displayWidth, displayWidth+1, displayWidth *2 +1, displayWidth*2 +2],
     ]
 
     function displayShape(){

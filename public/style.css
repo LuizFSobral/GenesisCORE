@@ -7,6 +7,7 @@ body{
   background-color: black;
   color: white;
   margin: 0;
+  overflow-x: hidden
 }
 a{
   text-decoration:  none;
@@ -18,7 +19,7 @@ a{
   padding-top: 2%;
 }
 .navbar{
-  width: 1160px;
+  width: 90%;
   height: 57px;
   border-top: 2px white solid;
   border-bottom: 2px white solid;
@@ -455,4 +456,16 @@ letter-spacing: 0.045em;
 .videos{
   width:40%;
   border:2px #FF008F solid;
+}
+.footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5%;
+  height: 50px;
+  width: 100vw;
+  font-size: 22px;
+  border-top:#9600FF 2px solid;
+  font-weight: 600;
+  font-family: glacial Indifference;
 }
